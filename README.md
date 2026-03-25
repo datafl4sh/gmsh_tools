@@ -11,14 +11,18 @@ This C++ librairy provides some tools to read and write meshes:
 The library runs on Unix systems. It is written in C++11 and requires a recent compiler to be compiled (GCC >= 5.0 or Clang >= 3.8). Older compilers may work but they are neither supported nor tested.
 
 To compile it:
- make
+
+    mkdir build
+    cd build
+    cmake ..
+    make
  
  
  You will end up with an executable named `gmsh_tools` and some meshes in `/meshes`.
  
  
-# Exemple
-There is an exemple in main.cc
+# Example
+There is an example in main.cc
 
     gmsh_tools ./meshes/<meshes>
     
