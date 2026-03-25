@@ -52,24 +52,21 @@ if(BUILD_EXECUTABLE)
     )
 endif()
 
-# Export targets (for find_package / parent projects)
 install(EXPORT ${LIB_NAME}Targets
     FILE ${LIB_NAME}Targets.cmake
-    NAMESPACE ${PROJECT_NAME}::
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}
+    NAMESPACE ${LIB_NAME}::
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${LIB_NAME}
 )
 
-# Optional: generate a basic config file
 include(CMakePackageConfigHelpers)
 
 write_basic_package_version_file(
-    "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/cmake/${LIB_NAME}Config.cmake"
     VERSION ${PROJECT_VERSION}
     COMPATIBILITY SameMajorVersion
 )
 
 install(FILES
-    "${CMAKE_CURRENT_LIST_DIR}/cmake/${PROJECT_NAME}Config.cmake"
-    "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake"
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}
+    "${CMAKE_CURRENT_BINARY_DIR}/cmake/${LIB_NAME}Config.cmake"
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${LIB_NAME}
 )

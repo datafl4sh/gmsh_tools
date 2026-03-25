@@ -20,9 +20,9 @@
 #include <utility>
 #include <vector>
 
-#include "gmshData.hpp"
-#include "gmshElement.hpp"
-#include "gmshMesh.hpp"
+#include "gmsh_tools/gmshData.hpp"
+#include "gmsh_tools/gmshElement.hpp"
+#include "gmsh_tools/gmshMesh.hpp"
 
 namespace gmsh {
 

@@ -17,9 +17,9 @@
 #include<iostream>
 #include<string>
 #include <math.h>
-#include "gmshMesh.hpp"
-#include "gmshData.hpp"
-#include "gmshElement.hpp"
+#include "gmsh_tools/gmshMesh.hpp"
+#include "gmsh_tools/gmshData.hpp"
+#include "gmsh_tools/gmshElement.hpp"
 
 using namespace std;
 

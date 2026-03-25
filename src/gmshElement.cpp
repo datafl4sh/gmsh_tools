@@ -14,8 +14,8 @@
  * cite it.
  */
 
-#include "gmshElement.hpp"
-#include "gmshMesh.hpp"
+#include "gmsh_tools/gmshElement.hpp"
+#include "gmsh_tools/gmshMesh.hpp"
 #include <assert.h>
 #include <fstream>
 #include <iostream>
