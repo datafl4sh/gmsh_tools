@@ -17,6 +17,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(LIB_SOURCES src/gmshData.cpp src/gmshElement.cpp src/gmshMesh.cpp)
 
 add_library(${LIB_NAME} STATIC ${LIB_SOURCES})
+set_target_properties(${LIB_NAME} PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
 target_include_directories(${LIB_NAME}
     PUBLIC
